@@ -1,0 +1,32 @@
+import subprocess
+from concurrent.futures import ThreadPoolExecutor
+from itertools import product
+
+# Your configurations
+configurations = [
+    ['4kB', '32kB', '4', 'RandomRP', '2048kB', '8', 'LRURP'],
+    ['4kB', '32kB', '2', 'LRURP', '2048kB', '32', 'LRURP'],
+    ['8kB', '8kB', '4', 'LRURP', '1024kB', '8', 'RandomRP'],
+    # ... (add more if needed)
+]
+
+# Your directories
+directories = [
+    "64Cores_configA_dir1",
+    "64Cores_configB_dir2",
+    # ... (replace with real directory names)
+]
+
+# Function to run a script inside a directory with a specific configuration
+def run_config_in_dir(args):
+    config, directory = args
+    config_str = ' '.join(config)
+    command = f"cd {directory} && bash Hetero_run_wu.sh 32 {config_str} exclusive"
+    print(f"Running in {directory} with config: {config}")
+    subprocess.run(command, shell=True)
+
+# Run all config × directory combinations in parallel
+if __name__ == "__main__":
+    all_tasks = list(product(configurations, directories))  # Cartesian product
+    with ThreadPoolExecutor(max_workers=len(all_tasks)) as executor:
+        executor.map(run_config_in_dir, all_tasks)
