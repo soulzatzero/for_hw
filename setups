@@ -1,0 +1,12 @@
+selected_01_09 = [
+    ['4kB', '8kB', '4', 'RandomRP', '512kB', '8', 'RandomRP'],
+    ['16kB', '8kB', '2', 'LRURP', '512kB', '8', 'RandomRP'],
+    ['8kB', '8kB', '4', 'LRURP', '2048kB', '16', 'RandomRP'],
+    ['16kB', '16kB', '4', 'LRURP', '512kB', '8', 'LRURP'],
+    ['4kB', '16kB', '2', 'LRURP', '512kB', '16', 'LRURP'],
+    ['4kB', '32kB', '4', 'RandomRP', '2048kB', '32', 'LRURP'],
+    ['8kB', '32kB', '4', 'LRURP', '1024kB', '32', 'RandomRP'],
+    ['16kB', '32kB', '4', 'LRURP', '1024kB', '8', 'RandomRP'],
+    ['8kB', '32kB', '2', 'LRURP', '1024kB', '8', 'LRURP'],
+    ['16kB', '32kB', '2', 'RandomRP', '1024kB', '8', 'LRURP']
+]
