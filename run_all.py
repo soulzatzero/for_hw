@@ -29,3 +29,7 @@ if __name__ == "__main__":
     max_workers = 30  # Adjust based on your CPU/GPU limits
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         executor.map(run_script, configurations)
+
+
+
+oom-kill:constraint=CONSTRAINT_MEMCG,nodemask=(null),cpuset=/,mems_allowed=0-3,oom_memcg=/user.slice/user-1015.slice,task_memcg=/user.slice/user-1015.slice,task=gem5.opt,pid=39850,uid=1015
