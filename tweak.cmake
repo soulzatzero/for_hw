@@ -18,8 +18,16 @@ if(CMAKE_C_COMPILER_ID MATCHES "GNU|Clang")
   set(CMAKE_SHARED_LINKER_FLAGS_PROFILING "-pg")
 
   # Make absolutely sure ALL targets in this directory tree get -pg (even if they set their own flags)
-  add_compile_options($<$<CONFIG:Profiling>:-O2 -g -pg -fno-omit-frame-pointer>)
-  add_link_options(   $<$<CONFIG:Profiling>:-pg>)
+  add_compile_options(
+    $<$<CONFIG:Profiling>:-O2>
+    $<$<CONFIG:Profiling>:-g>
+    $<$<CONFIG:Profiling>:-pg>
+    $<$<CONFIG:Profiling>:-fno-omit-frame-pointer>
+)
+
+add_link_options(
+    $<$<CONFIG:Profiling>:-pg>
+)
 
   # gprof often breaks with LTO/IPO; keep it off in Profiling
   set(CMAKE_INTERPROCEDURAL_OPTIMIZATION_PROFILING OFF)
