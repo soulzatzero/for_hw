@@ -1,0 +1,379 @@
+                                |                                |          |          
+                          |                                |                                                      |                                |           --1.59%--BRM_RM_LocRib_AddRtHead
+                          |                                |                                                      |                                |                     |          
+                          |                                |                                                      |                                |                      --1.15%--0xffff590dae63
+                          |                                |                                                      |                                |                                VRP_RDX_AddNode
+                          |                                |                                                      |                                |          
+                          |                                |                                                      |                                |--1.20%--BRM_RM_RibIn_AddRoute
+                          |                                |                                                      |                                |          |          
+                          |                                |                                                      |                                |           --0.76%--BRM_RM_RibInAddRbNode
+                          |                                |                                                      |                                |                     |          
+                          |                                |                                                      |                                |                      --0.56%--BRM_RM_PeerRibIn_CmpRtEntry
+                          |                                |                                                      |                                |          
+                          |                                |                                                      |                                 --0.56%--BRM_NHM_AddAndRelayNexthop
+                          |                                |                                                      |          
+                          |                                |                                                       --0.74%--BRM_SCH_SingleThreadRuning
+                          |                                |                                                                 BRM_NMRI_ParseUpdateMsgBodyThread
+                          |                                |                                                                 BRM_NMRI_ParseUpdateMsgBody
+                          |                                |                                                                 BRM_NMRI_ParseUpdateTLV
+                          |                                |                                                                 BRM_NMRI_ParseUpdatePkt
+                          |                                |                                                                 |          
+                          |                                |                                                                  --0.58%--BRM_NMRI_ParseNlri
+                          |                                |                                                                            |          
+                          |                                |                                                                             --0.52%--NMRI_ParseNlriLoop
+                          |                                |          
+                          |                                |--16.50%--RTF_MsgProcessCbk
+                          |                                |          |          
+                          |                                |          |--10.02%--BRM_RecevieProc
+                          |                                |          |          |          
+                          |                                |          |           --9.98%--BRM_CM_JobSchedule
+                          |                                |          |                     VRP_JOB_Scheduler
+                          |                                |          |                     VRP_JOB_Scheduler_H
+                          |                                |          |                     |          
+                          |                                |          |                      --9.97%--BRM_CM_JobProc
+                          |                                |          |                                |          
+                          |                                |          |                                |--3.65%--BRM_DP_SelectingJobHandler
+                          |                                |          |                                |          |          
+                          |                                |          |                                |           --3.63%--BRM_DP_SelectingThread
+                          |                                |          |                                |                     |          
+                          |                                |          |                                |                     |--2.43%--BRM_DP_NotifyDecisionResult
+                          |                                |          |                                |                     |          |          
+                          |                                |          |                                |                     |          |--0.72%--BRM_RUM_DistributeBestRoute
+                          |                                |          |                                |                     |          |          |          
+                          |                                |          |                                |                     |          |           --0.61%--BRM_NMRO_PutToInstanceAdvList
+                          |                                |          |                                |                     |          |          
+                          |                                |          |                                |                     |           --0.59%--BRM_RUM_DistributeActiveRoute
+                          |                                |          |                                |                     |          
+                          |                                |          |                                |                      --1.04%--BRM_DP_AddRtEntrysIntoSelectedList
+                          |                                |          |                                |                                |          
+                          |                                |          |                                |                                 --0.88%--BRM_DP_AddOneRtEntryIntoSelectedList
+                          |                                |          |                                |                                           |          
+                          |                                |          |                                |                                            --0.81%--BRM_DP_CompareRoute
+                          |                                |          |                                |          
+                          |                                |          |                                |--2.76%--BRM_NMRO_InstanceDistributeRouteJobHandler
+                          |                                |          |                                |          |          
+                          |                                |          |                                |           --2.22%--BRM_NMRO_PushSingleRouteToAllUpdatePeerGroups
+                          |                                |          |                                |                     |          
+                          |                                |          |                                |                      --1.80%--BRM_NMRO_PutToUpgRealAdvList
+                          |                                |          |                                |                                |          
+                          |                                |          |                                |                                 --1.14%--BRM_NMRO_PutToUpgRealNoAddPath
+                          |                                |          |                                |          
+                          |                                |          |                                |--2.13%--BRM_UPG_FormatJobHandle
+                          |                                |          |                                |          |          
+                          |                                |          |                                |           --2.12%--BRM_XMRO_SendMsgAddProcFlowCtrl
+                          |                                |          |                                |                     BRM_XMRO_SendMsgWithFlowCtrl
+                          |                                |          |                                |                     |          
+                          |                                |          |                                |                      --1.99%--BRM_XMRO_FormatDataMsg
+                          |                                |          |                                |                                |          
+                          |                                |          |                                |                                 --1.98%--BRM_RMRO_FormatRoute
+                          |                                |          |                                |                                           |          
+                          |                                |          |                                |                                            --0.91%--BRM_RMRO_FormatRoutePrefixTLV
+                          |                                |          |                                |                                                      |          
+                          |                                |          |                                |                                                       --0.83%--BRM_RMRO_FormatRouteDetailTlv
+                          |                                |          |                                |          
+                          |                                |          |                                 --1.35%--BRM_NMRO_PackUpdateJobHandler
+                          |                                |          |                                           BRM_NMRO_ProcPackUpdate
+                          |                                |          |                                           BRM_NMRO_PackUpdateThread
+                          |                                |          |                                           BRM_NMRO_SendUpdateMsgWithFlowCtrl
+                          |                                |          |                                           BRM_NMRO_FormatAndSendMsg
+                          |                                |          |                                           |          
+                          |                                |          |                                            --1.32%--BRM_NMRO_FormatUpdateBuffer
+                          |                                |          |                                                      BRM_NMRO_FormatUpdatePkt
+                          |                                |          |                                                      |          
+                          |                                |          |                                                       --0.96%--BRM_NMRO_FormatUpdatePktEx
+                          |                                |          |          
+                          |                                |           --5.80%--RM_COM_ReceiveMsg
+                          |                                |                     |          
+                          |                                |                      --5.70%--RM_RECV_ProcJobMsg
+                          |                                |                                VRP_JOB_Scheduler
+                          |                                |                                VRP_JOB_Scheduler_H
+                          |                                |                                |          
+                          |                                |                                 --5.69%--RM_JOB_Scheduler
+                          |                                |                                           |          
+                          |                                |                                            --5.67%--RM_RS_NotifyRouteChangeJobCB
+                          |                                |                                                      |          
+                          |                                |                                                      |--2.85%--RM_RS_NotifyRtUpdate_H
+                          |                                |                                                      |          |          
+                          |                                |                                                      |           --1.68%--RM_FEAD_ProcPrefixUpdate
+                          |                                |                                                      |                     |          
+                          |                                |                                                      |                      --0.67%--RM_FEAD_BuildUpdatePrefixMsg
+                          |                                |                                                      |                                |          
+                          |                                |                                                      |                                 --0.63%--RM_FEAD_BuildComplexPrefixTlv
+                          |                                |                                                      |          
+                          |                                |                                                       --2.09%--VRP_Free_F
+                          |                                |                                                                 |          
+                          |                                |                                                                  --2.05%--VOS_MemFree_F
+                          |                                |          
+                          |                                 --0.77%--dmsPipeFnMsgProc
+                          |          
+                           --1.91%--StartCompTask
+                                     |          
+                                      --1.90%--DeployCreateComponent
+                                                |          
+                                                 --1.58%--ImportCompInfo2Dopra
+                                                           RTF_CompTypeImportByMode
+                                                           rtfCompTypeImportByMode
+                                                           |          
+                                                            --1.58%--rtfCcmCompFileHdlGet
+                                                                      |          
+                                                                       --1.55%--rtfCcmCompObjFileLoadAndTblAlloc
+                                                                                 VOS_StarterDyLoadByMode
+                                                                                 |          
+                                                                                  --1.55%--starterModuleInit
+                                                                                            starterModEntrySet
+                                                                                            starterLibDload
+                                                                                            starterBinObjectsLoad
+                                                                                            elfbinldrRelocator
+                                                                                            vosShareLibOpen
+                                                                                            dlopen
+                                                                                            0xffffad41dc5f
+                                                                                            _dl_catch_error
+                                                                                            _dl_catch_exception
+                                                                                            0xffffad41e183
+                                                                                            0xffffae3fa2c7
+                                                                                            _dl_catch_exception
+                                                                                            0xffffae3f9ef7
+                                                                                            _dl_catch_exception
+                                                                                            |          
+                                                                                             --1.52%--0xffffae3fa8cb
+                                                                                                       |          
+                                                                                                        --1.29%--0xffffae3fc3f7
+                                                                                                                  |          
+                                                                                                                   --1.16%--0xffffae3f7cf3
+
+    40.39%     0.00%  DefSch0101     libdefault.so            [.] VosTskAllTaskEntry
+            |
+            ---VosTskAllTaskEntry
+               rtfScmCompScheDefaultEntry
+               |          
+                --40.37%--rtfScmCompScheKernelEntryFifo
+                          |          
+                           --40.35%--rtfScmMessageSchedule
+                                     |          
+                                     |--22.96%--dmsFcmMsgProcessCbk
+                                     |          |          
+                                     |          |--16.24%--RM_COM_ReceiveMsg
+                                     |          |          |          
+                                     |          |           --16.23%--RM_RECV_ProcCtlRmiMsg
+                                     |          |                     |          
+                                     |          |                      --16.16%--RM_PM_ProcRPMsg
+                                     |          |                                |          
+                                     |          |                                 --16.14%--RM_RP_ProcMsg
+                                     |          |                                           |          
+                                     |          |                                            --16.14%--RM_RP_RealUpdateRoute
+                                     |          |                                                      RM_RP_UpdateRoute
+                                     |          |                                                      |          
+                                     |          |                                                       --16.08%--RM_RP_ParseUpdateRouteTLV
+                                     |          |                                                                 |          
+                                     |          |                                                                  --16.03%--RM_RP_ParsePrefix
+                                     |          |                                                                            |          
+                                     |          |                                                                             --14.80%--RM_RS_UpdateRoute
+                                     |          |                                                                                       |          
+                                     |          |                                                                                       |--6.04%--RM_RS_AddPrefix
+                                     |          |                                                                                       |          |          
+                                     |          |                                                                                       |          |--4.80%--VRP_RDX_AddNode
+                                     |          |                                                                                       |          |          |          
+                                     |          |                                                                                       |          |           --3.16%--VRP_SimpleAlloc_F
+                                     |          |                                                                                       |          |                     |          
+                                     |          |                                                                                       |          |                      --3.12%--VRP_MallocEx_F
+                                     |          |                                                                                       |          |                                |          
+                                     |          |                                                                                       |          |                                 --3.05%--VOS_MemAlloc_F
+                                     |          |                                                                                       |          |                                           |          
+                                     |          |                                                                                       |          |                                           |--0.72%--DLM_AllocSlice
+                                     |          |                                                                                       |          |                                           |          
+                                     |          |                                                                                       |          |                                           |--0.63%--vosMemVisualAllocStat
+                                     |          |                                                                                       |          |                                           |          
+                                     |          |                                                                                       |          |                                            --0.50%--0xffffad4268c3
+                                     |          |                                                                                       |          |                                                      0xffffad41ecbc
+                                     |          |                                                                                       |          |          
+                                     |          |                                                                                       |           --1.09%--RM_RS_AllocPrefixCache
+                                     |          |                                                                                       |                     |          
+                                     |          |                                                                                       |                      --1.08%--VRP_SimpleAlloc_F
+                                     |          |                                                                                       |                                |          
+                                     |          |                                                                                       |                                 --1.06%--VRP_MallocEx_F
+                                     |          |                                                                                       |                                           |          
+                                     |          |                                                                                       |                                            --1.02%--VOS_MemAlloc_F
+                                     |          |                                                                                       |          
+                                     |          |                                                                                       |--4.96%--RM_RS_UpdatePath
+                                     |          |                                                                                       |          |          
+                                     |          |                                                                                       |           --4.49%--RM_RS_CopyPath
+                                     |          |                                                                                       |                     |          
+                                     |          |                                                                                       |                     |--2.74%--RM_RS_CopyPathData
+                                     |          |                                                                                       |                     |          |          
+                                     |          |                                                                                       |                     |          |--1.64%--VRP_SimpleAlloc_F
+                                     |          |                                                                                       |                     |          |          |          
+                                     |          |                                                                                       |                     |          |           --1.64%--VRP_MallocEx_F
+                                     |          |                                                                                       |                     |          |                     |          
+                                     |          |                                                                                       |                     |          |                      --1.59%--VOS_MemAlloc_F
+                                     |          |                                                                                       |                     |          |          
+                                     |          |                                                                                       |                     |           --0.85%--RM_RS_FreePathData
+                                     |          |                                                                                       |                     |                     |          
+                                     |          |                                                                                       |                     |                      --0.83%--VRP_Free_F
+                                     |          |                                                                                       |                     |                                |          
+                                     |          |                                                                                       |                     |                                 --0.78%--VOS_MemFree_F
+                                     |          |                                                                                       |                     |          
+                                     |          |                                                                                       |                      --1.22%--VRP_SimpleAlloc_F
+                                     |          |                                                                                       |                                |          
+                                     |          |                                                                                       |                                 --1.19%--VRP_MallocEx_F
+                                     |          |                                                                                       |                                           |          
+                                     |          |                                                                                       |                                            --1.16%--VOS_MemAlloc_F
+                                     |          |                                                                                       |          
+                                     |          |                                                                                        --2.76%--RM_RS_AddPrefixToChgList
+                                     |          |                                                                                                  |          
+                                     |          |                                                                                                   --2.33%--VRP_SimpleAlloc_F
+                                     |          |                                                                                                             |          
+                                     |          |                                                                                                              --2.27%--VRP_MallocEx_F
+                                     |          |                                                                                                                        |          
+                                     |          |                                                                                                                         --2.23%--VOS_MemAlloc_F
+                                     |          |                                                                                                                                   |          
+                                     |          |                                                                                                                                    --0.70%--DLM_AllocSlice
+                                     |          |          
+                                     |           --6.62%--BRM_RecevieProc
+                                     |                     |          
+                                     |                      --6.57%--BRM_BNMI_ParseBnmUpdatMsg
+                                     |                                |          
+                                     |                                 --6.55%--BRM_BNMI_ProcUpdateTlv
+                                     |                                           |          
+                                     |                                            --6.55%--BRM_BNMI_ProcUpdateMultiThread
+                                     |                                                      |          
+                                     |                                                      |--5.79%--BRM_NMRI_ProcRoute
+                                     |                                                      |          |          
+                                     |                                                      |           --5.68%--BRM_NMRI_ProcPrefixNode
+                                     |                                                      |                     |          
+                                     |                                                      |                      --5.07%--BRM_NMRI_RecvUpdateRoute
+                                     |                                                      |                                |          
+                                     |                                                      |                                |--2.71%--BRM_RM_LocRib_AddRoute
+                                     |                                                      |                                |          |          
+                                     |                                                      |                                |           --1.59%--BRM_RM_LocRib_AddRtHead
+                                     |                                                      |                                |                     |          
+                                     |                                                      |                                |                      --1.15%--0xffff590dae63
+                                     |                                                      |                                |                                VRP_RDX_AddNode
+                                     |                                                      |                                |          
+                                     |                                                      |                                |--1.20%--BRM_RM_RibIn_AddRoute
+                                     |                                                      |                                |          |          
+                                     |                                                      |                                |           --0.76%--BRM_RM_RibInAddRbNode
+                                     |                                                      |                                |                     |          
+                                     |                                                      |                                |                      --0.56%--BRM_RM_PeerRibIn_CmpRtEntry
+                                     |                                                      |                                |          
+                                     |                                                      |                                 --0.56%--BRM_NHM_AddAndRelayNexthop
+                                     |                                                      |          
+                                     |                                                       --0.74%--BRM_SCH_SingleThreadRuning
+                                     |                                                                 BRM_NMRI_ParseUpdateMsgBodyThread
+                                     |                                                                 BRM_NMRI_ParseUpdateMsgBody
+                                     |                                                                 BRM_NMRI_ParseUpdateTLV
+                                     |                                                                 BRM_NMRI_ParseUpdatePkt
+                                     |                                                                 |          
+                                     |                                                                  --0.58%--BRM_NMRI_ParseNlri
+                                     |                                                                            |          
+                                     |                                                                             --0.52%--NMRI_ParseNlriLoop
+                                     |          
+                                     |--16.50%--RTF_MsgProcessCbk
+                                     |          |          
+                                     |          |--10.02%--BRM_RecevieProc
+                                     |          |          |          
+                                     |          |           --9.98%--BRM_CM_JobSchedule
+                                     |          |                     VRP_JOB_Scheduler
+                                     |          |                     VRP_JOB_Scheduler_H
+                                     |          |                     |          
+                                     |          |                      --9.97%--BRM_CM_JobProc
+                                     |          |                                |          
+                                     |          |                                |--3.65%--BRM_DP_SelectingJobHandler
+                                     |          |                                |          |          
+                                     |          |                                |           --3.63%--BRM_DP_SelectingThread
+                                     |          |                                |                     |          
+                                     |          |                                |                     |--2.43%--BRM_DP_NotifyDecisionResult
+                                     |          |                                |                     |          |          
+                                     |          |                                |                     |          |--0.72%--BRM_RUM_DistributeBestRoute
+                                     |          |                                |                     |          |          |          
+                                     |          |                                |                     |          |           --0.61%--BRM_NMRO_PutToInstanceAdvList
+                                     |          |                                |                     |          |          
+                                     |          |                                |                     |           --0.59%--BRM_RUM_DistributeActiveRoute
+                                     |          |                                |                     |          
+                                     |          |                                |                      --1.04%--BRM_DP_AddRtEntrysIntoSelectedList
+                                     |          |                                |                                |          
+                                     |          |                                |                                 --0.88%--BRM_DP_AddOneRtEntryIntoSelectedList
+                                     |          |                                |                                           |          
+                                     |          |                                |                                            --0.81%--BRM_DP_CompareRoute
+                                     |          |                                |          
+                                     |          |                                |--2.76%--BRM_NMRO_InstanceDistributeRouteJobHandler
+                                     |          |                                |          |          
+                                     |          |                                |           --2.22%--BRM_NMRO_PushSingleRouteToAllUpdatePeerGroups
+                                     |          |                                |                     |          
+                                     |          |                                |                      --1.80%--BRM_NMRO_PutToUpgRealAdvList
+                                     |          |                                |                                |          
+                                     |          |                                |                                 --1.14%--BRM_NMRO_PutToUpgRealNoAddPath
+                                     |          |                                |          
+                                     |          |                                |--2.13%--BRM_UPG_FormatJobHandle
+                                     |          |                                |          |          
+                                     |          |                                |           --2.12%--BRM_XMRO_SendMsgAddProcFlowCtrl
+                                     |          |                                |                     BRM_XMRO_SendMsgWithFlowCtrl
+                                     |          |                                |                     |          
+                                     |          |                                |                      --1.99%--BRM_XMRO_FormatDataMsg
+                                     |          |                                |                                |          
+                                     |          |                                |                                 --1.98%--BRM_RMRO_FormatRoute
+                                     |          |                                |                                           |          
+                                     |          |                                |                                            --0.91%--BRM_RMRO_FormatRoutePrefixTLV
+                                     |          |                                |                                                      |          
+                                     |          |                                |                                                       --0.83%--BRM_RMRO_FormatRouteDetailTlv
+                                     |          |                                |          
+                                     |          |                                 --1.35%--BRM_NMRO_PackUpdateJobHandler
+                                     |          |                                           BRM_NMRO_ProcPackUpdate
+                                     |          |                                           BRM_NMRO_PackUpdateThread
+                                     |          |                                           BRM_NMRO_SendUpdateMsgWithFlowCtrl
+                                     |          |                                           BRM_NMRO_FormatAndSendMsg
+                                     |          |                                           |          
+                                     |          |                                            --1.32%--BRM_NMRO_FormatUpdateBuffer
+                                     |          |                                                      BRM_NMRO_FormatUpdatePkt
+                                     |          |                                                      |          
+                                     |          |                                                       --0.96%--BRM_NMRO_FormatUpdatePktEx
+                                     |          |          
+                                     |           --5.80%--RM_COM_ReceiveMsg
+                                     |                     |          
+                                     |                      --5.70%--RM_RECV_ProcJobMsg
+                                     |                                VRP_JOB_Scheduler
+                                     |                                VRP_JOB_Scheduler_H
+                                     |                                |          
+                                     |                                 --5.69%--RM_JOB_Scheduler
+                                     |                                           |          
+                                     |                                            --5.67%--RM_RS_NotifyRouteChangeJobCB
+                                     |                                                      |          
+                                     |                                                      |--2.85%--RM_RS_NotifyRtUpdate_H
+                                     |                                                      |          |          
+                                     |                                                      |           --1.68%--RM_FEAD_ProcPrefixUpdate
+                                     |                                                      |                     |          
+                                     |                                                      |                      --0.67%--RM_FEAD_BuildUpdatePrefixMsg
+                                     |                                                      |                                |          
+                                     |                                                      |                                 --0.63%--RM_FEAD_BuildComplexPrefixTlv
+                                     |                                                      |          
+                                     |                                                       --2.09%--VRP_Free_F
+                                     |                                                                 |          
+                                     |                                                                  --2.05%--VOS_MemFree_F
+                                     |          
+                                      --0.79%--dmsPipeFnMsgProc
+
+    40.39%     0.00%  DefSch0101     libdefault.so            [.] rtfScmCompScheDefaultEntry
+            |
+            ---rtfScmCompScheDefaultEntry
+               |          
+                --40.37%--rtfScmCompScheKernelEntryFifo
+                          |          
+                           --40.35%--rtfScmMessageSchedule
+                                     |          
+                                     |--22.96%--dmsFcmMsgProcessCbk
+                                     |          |          
+                                     |          |--16.24%--RM_COM_ReceiveMsg
+                                     |          |          |          
+                                     |          |           --16.23%--RM_RECV_ProcCtlRmiMsg
+                                     |          |                     |          
+                                     |          |                      --16.16%--RM_PM_ProcRPMsg
+                                     |          |                                |          
+                                     |          |                                 --16.14%--RM_RP_ProcMsg
+                                     |          |                                           |          
+                                     |          |                                            --16.14%--RM_RP_RealUpdateRoute
+                                     |          |                                                      RM_RP_UpdateRoute
+                                     |          |                                                      |          
+                                     |          |                                                       --16.08%--RM_RP_ParseUpdateRouteTLV
+                                     |          |                                                                 |          
+                                     |          |                                                                  --16.03%--RM_RP_ParsePrefix
+                                     |          |                                                                            |          
+                                     |          |                                                                          

@@ -1,0 +1,838 @@
+om_freelist
+            |          |          
+            |           --0.58%--VosLightTcacheBinFill
+            |          
+             --1.02%--0xffffad48871b
+                       0xffffad4221ef
+                       VosTskAllTaskEntry
+                       rtfScmCompScheDefaultEntry
+                       rtfScmCompScheKernelEntryFifo
+                       rtfScmMessageSchedule
+                       |          
+                        --0.76%--RTF_MsgProcessCbk
+                                  BRM_RecevieProc
+                                  BRM_CM_JobSchedule
+                                  VRP_JOB_Scheduler
+                                  VRP_JOB_Scheduler_H
+                                  BRM_CM_JobProc
+
+     2.49%     0.00%  DefSch0100     benchmark_alt            [.] StartComponent
+            |
+            ---StartComponent
+               |          
+                --2.47%--RTF_CompInstCreate
+                          RTF_CcmCompInstCreate
+                          |          
+                           --2.41%--rtfCcmCompInstCreateStageOther
+                                     |          
+                                      --2.39%--FES_SetUp_Stage3
+                                                |          
+                                                 --2.34%--FES_Init
+                                                           |          
+                                                           |--1.06%--FES_FDB_LocalInitCommon
+                                                           |          |          
+                                                           |           --1.03%--FES_FDB_LoadConfigFiles
+                                                           |                     |          
+                                                           |                      --1.02%--FES_FDB_LoadFileList
+                                                           |                                FESLIB_DB_LoadConf
+                                                           |                                |          
+                                                           |                                 --0.66%--xmlSAXParseFileWithData
+                                                           |                                           |          
+                                                           |                                            --0.51%--xmlParseDocument
+                                                           |                                                      |          
+                                                           |                                                       --0.50%--xmlParseElement
+                                                           |          
+                                                            --0.53%--FES_GMP_Init
+                                                                      FES_FML_LoadFileList
+                                                                      FES_FML_ReadCfgFile
+                                                                      |          
+                                                                       --0.51%--FES_FML_PrintAndProcElm
+                                                                                 |          
+                                                                                  --0.50%--FES_GMP_CMPL_LoadFile
+                                                                                            FES_FML_ReadCfgFile
+
+     2.47%     0.00%  DefSch0100     libbrm.so                [.] BRM_PM_ReStorePolicy
+            |
+            ---BRM_PM_ReStorePolicy
+               |          
+               |--1.54%--RTP_CreateConfig
+               |          |          
+               |          |--0.76%--VRP_Assert
+               |          |          |          
+               |          |           --0.75%--VRP_AssertParseStack
+               |          |                     VOS_PatchSymNameGet
+               |          |                     __backtrace_symbols
+               |          |          
+               |           --0.57%--RTP_CFG_RestoreRoutePolicy
+               |                     RTP_CFG_GetFilterByVersion
+               |                     |          
+               |                      --0.57%--VRP_Assert
+               |                                VRP_AssertParseStack
+               |                                VOS_PatchSymNameGet
+               |                                __backtrace_symbols
+               |          
+                --0.94%--VRP_Assert
+                          |          
+                           --0.92%--VRP_AssertParseStack
+                                     |          
+                                      --0.92%--VOS_PatchSymNameGet
+                                                |          
+                                                 --0.91%--__backtrace_symbols
+
+     2.47%     0.00%  DefSch0100     libdefault.so            [.] RTF_CompInstCreate
+            |
+            ---RTF_CompInstCreate
+               RTF_CcmCompInstCreate
+               |          
+                --2.41%--rtfCcmCompInstCreateStageOther
+                          |          
+                           --2.39%--FES_SetUp_Stage3
+                                     |          
+                                      --2.34%--FES_Init
+                                                |          
+                                                |--1.06%--FES_FDB_LocalInitCommon
+                                                |          |          
+                                                |           --1.03%--FES_FDB_LoadConfigFiles
+                                                |                     |          
+                                                |                      --1.02%--FES_FDB_LoadFileList
+                                                |                                FESLIB_DB_LoadConf
+                                                |                                |          
+                                                |                                 --0.66%--xmlSAXParseFileWithData
+                                                |                                           |          
+                                                |                                            --0.51%--xmlParseDocument
+                                                |                                                      |          
+                                                |                                                       --0.50%--xmlParseElement
+                                                |          
+                                                 --0.53%--FES_GMP_Init
+                                                           FES_FML_LoadFileList
+                                                           FES_FML_ReadCfgFile
+                                                           |          
+                                                            --0.51%--FES_FML_PrintAndProcElm
+                                                                      |          
+                                                                       --0.50%--FES_GMP_CMPL_LoadFile
+                                                                                 FES_FML_ReadCfgFile
+
+     2.47%     0.00%  DefSch0100     libdefault.so            [.] RTF_CcmCompInstCreate
+            |
+            ---RTF_CcmCompInstCreate
+               |          
+                --2.41%--rtfCcmCompInstCreateStageOther
+                          |          
+                           --2.39%--FES_SetUp_Stage3
+                                     |          
+                                      --2.34%--FES_Init
+                                                |          
+                                                |--1.06%--FES_FDB_LocalInitCommon
+                                                |          |          
+                                                |           --1.03%--FES_FDB_LoadConfigFiles
+                                                |                     |          
+                                                |                      --1.02%--FES_FDB_LoadFileList
+                                                |                                FESLIB_DB_LoadConf
+                                                |                                |          
+                                                |                                 --0.66%--xmlSAXParseFileWithData
+                                                |                                           |          
+                                                |                                            --0.51%--xmlParseDocument
+                                                |                                                      |          
+                                                |                                                       --0.50%--xmlParseElement
+                                                |          
+                                                 --0.53%--FES_GMP_Init
+                                                           FES_FML_LoadFileList
+                                                           FES_FML_ReadCfgFile
+                                                           |          
+                                                            --0.51%--FES_FML_PrintAndProcElm
+                                                                      |          
+                                                                       --0.50%--FES_GMP_CMPL_LoadFile
+                                                                                 FES_FML_ReadCfgFile
+
+     2.44%     0.18%  DefSch0101     libbrm.so                [.] BRM_DP_NotifyDecisionResult
+            |          
+             --2.26%--BRM_DP_NotifyDecisionResult
+                       |          
+                       |--0.72%--BRM_RUM_DistributeBestRoute
+                       |          |          
+                       |           --0.61%--BRM_NMRO_PutToInstanceAdvList
+                       |          
+                        --0.59%--BRM_RUM_DistributeActiveRoute
+
+     2.43%     0.00%  DefSch0100     librm.so                 [.] RM_RECV_ProcJobMsg
+            |
+            ---RM_RECV_ProcJobMsg
+               VRP_JOB_Scheduler
+               VRP_JOB_Scheduler_H
+               |          
+                --2.42%--RM_JOB_Scheduler
+                          |          
+                           --2.41%--RM_RS_NotifyRouteChangeJobCB
+                                     |          
+                                     |--1.36%--RM_RS_NotifyRtUpdate_H
+                                     |          |          
+                                     |           --0.86%--RM_FEAD_ProcPrefixUpdate
+                                     |          
+                                      --0.73%--VRP_Free_F
+                                                |          
+                                                 --0.71%--VOS_MemFree_F
+
+     2.43%     0.00%  DefSch0100     libbrm.so                [.] BRM_DP_SelectingJobHandler
+            |
+            ---BRM_DP_SelectingJobHandler
+               |          
+                --2.42%--BRM_DP_SelectingThread
+                          |          
+                           --2.12%--BRM_DP_NotifyDecisionResult
+                                     |          
+                                     |--0.86%--BRM_RUM_DistributeBestRoute
+                                     |          |          
+                                     |           --0.75%--BRM_NMRO_PutToInstanceAdvList
+                                     |                     |          
+                                     |                      --0.56%--BRM_RM_CreateAdvData
+                                     |          
+                                      --0.55%--BRM_RUM_DistributeActiveRoute
+
+     2.42%     0.00%  DefSch0100     librm.so                 [.] RM_JOB_Scheduler
+            |
+            ---RM_JOB_Scheduler
+               |          
+                --2.41%--RM_RS_NotifyRouteChangeJobCB
+                          |          
+                          |--1.36%--RM_RS_NotifyRtUpdate_H
+                          |          |          
+                          |           --0.86%--RM_FEAD_ProcPrefixUpdate
+                          |          
+                           --0.73%--VRP_Free_F
+                                     |          
+                                      --0.71%--VOS_MemFree_F
+
+     2.42%     0.04%  DefSch0100     libbrm.so                [.] BRM_DP_SelectingThread
+            |          
+             --2.38%--BRM_DP_SelectingThread
+                       |          
+                        --2.12%--BRM_DP_NotifyDecisionResult
+                                  |          
+                                  |--0.86%--BRM_RUM_DistributeBestRoute
+                                  |          |          
+                                  |           --0.75%--BRM_NMRO_PutToInstanceAdvList
+                                  |                     |          
+                                  |                      --0.56%--BRM_RM_CreateAdvData
+                                  |          
+                                   --0.55%--BRM_RUM_DistributeActiveRoute
+
+     2.42%     0.04%  DefSch0100     librm.so                 [.] RM_RS_NotifyRouteChangeJobCB
+            |          
+             --2.38%--RM_RS_NotifyRouteChangeJobCB
+                       |          
+                       |--1.36%--RM_RS_NotifyRtUpdate_H
+                       |          |          
+                       |           --0.86%--RM_FEAD_ProcPrefixUpdate
+                       |          
+                        --0.73%--VRP_Free_F
+                                  |          
+                                   --0.71%--VOS_MemFree_F
+
+     2.41%     0.00%  DefSch0100     libdefault.so            [.] rtfCcmCompInstCreateStageOther
+            |
+            ---rtfCcmCompInstCreateStageOther
+               |          
+                --2.39%--FES_SetUp_Stage3
+                          |          
+                           --2.34%--FES_Init
+                                     |          
+                                     |--1.06%--FES_FDB_LocalInitCommon
+                                     |          |          
+                                     |           --1.03%--FES_FDB_LoadConfigFiles
+                                     |                     |          
+                                     |                      --1.02%--FES_FDB_LoadFileList
+                                     |                                FESLIB_DB_LoadConf
+                                     |                                |          
+                                     |                                 --0.66%--xmlSAXParseFileWithData
+                                     |                                           |          
+                                     |                                            --0.51%--xmlParseDocument
+                                     |                                                      |          
+                                     |                                                       --0.50%--xmlParseElement
+                                     |          
+                                      --0.53%--FES_GMP_Init
+                                                FES_FML_LoadFileList
+                                                FES_FML_ReadCfgFile
+                                                |          
+                                                 --0.51%--FES_FML_PrintAndProcElm
+                                                           |          
+                                                            --0.50%--FES_GMP_CMPL_LoadFile
+                                                                      FES_FML_ReadCfgFile
+
+     2.40%     0.03%  DefSch0100     [kernel.kallsyms]        [k] __arm64_sys_futex
+            |          
+             --2.37%--__arm64_sys_futex
+                       do_futex
+                       |          
+                        --1.90%--futex_wake
+                                  |          
+                                   --1.13%--wake_up_q
+                                             |          
+                                              --1.10%--arch_local_irq_restore
+
+     2.39%     0.00%  DefSch0100     libfesds.so              [.] FES_SetUp_Stage3
+            |
+            ---FES_SetUp_Stage3
+               |          
+                --2.34%--FES_Init
+                          |          
+                          |--1.06%--FES_FDB_LocalInitCommon
+                          |          |          
+                          |           --1.03%--FES_FDB_LoadConfigFiles
+                          |                     |          
+                          |                      --1.02%--FES_FDB_LoadFileList
+                          |                                FESLIB_DB_LoadConf
+                          |                                |          
+                          |                                 --0.66%--xmlSAXParseFileWithData
+                          |                                           |          
+                          |                                            --0.51%--xmlParseDocument
+                          |                                                      |          
+                          |                                                       --0.50%--xmlParseElement
+                          |          
+                           --0.53%--FES_GMP_Init
+                                     FES_FML_LoadFileList
+                                     FES_FML_ReadCfgFile
+                                     |          
+                                      --0.51%--FES_FML_PrintAndProcElm
+                                                |          
+                                                 --0.50%--FES_GMP_CMPL_LoadFile
+                                                           FES_FML_ReadCfgFile
+
+     2.38%     0.10%  DefSch0100     librm.so                 [.] RM_RS_UpdatePath
+            |          
+             --2.28%--RM_RS_UpdatePath
+                       |          
+                        --1.79%--RM_RS_CopyPath
+                                  |          
+                                   --1.47%--RM_RS_CopyPathData
+                                             |          
+                                             |--0.82%--RM_RS_FreePathData
+                                             |          |          
+                                             |           --0.82%--VRP_Free_F
+                                             |                     |          
+                                             |                      --0.79%--VOS_MemFree_F
+                                             |          
+                                              --0.51%--VRP_SimpleAlloc_F
+
+     2.37%     0.01%  DefSch0100     [kernel.kallsyms]        [k] do_futex
+            |          
+             --2.37%--do_futex
+                       |          
+                        --1.90%--futex_wake
+                                  |          
+                                   --1.13%--wake_up_q
+                                             |          
+                                              --1.10%--arch_local_irq_restore
+
+     2.34%     0.00%  DefSch0100     libfesds.so              [.] FES_Init
+            |
+            ---FES_Init
+               |          
+               |--1.06%--FES_FDB_LocalInitCommon
+               |          |          
+               |           --1.03%--FES_FDB_LoadConfigFiles
+               |                     |          
+               |                      --1.02%--FES_FDB_LoadFileList
+               |                                FESLIB_DB_LoadConf
+               |                                |          
+               |                                 --0.66%--xmlSAXParseFileWithData
+               |                                           |          
+               |                                            --0.51%--xmlParseDocument
+               |                                                      |          
+               |                                                       --0.50%--xmlParseElement
+               |          
+                --0.53%--FES_GMP_Init
+                          FES_FML_LoadFileList
+                          FES_FML_ReadCfgFile
+                          |          
+                           --0.51%--FES_FML_PrintAndProcElm
+                                     |          
+                                      --0.50%--FES_GMP_CMPL_LoadFile
+                                                FES_FML_ReadCfgFile
+
+     2.31%     0.07%  DefSch0101     [kernel.kallsyms]        [k] el0_da
+            |          
+             --2.24%--el0_da
+                       do_mem_abort
+                       |          
+                        --2.21%--do_translation_fault
+                                  |          
+                                   --2.20%--do_page_fault
+                                             |          
+                                              --2.07%--handle_mm_fault
+                                                        |          
+                                                         --2.00%--__handle_mm_fault
+                                                                   |          
+                                                                    --0.99%--alloc_pages_vma
+                                                                              |          
+                                                                               --0.99%--__alloc_pages_nodemask
+                                                                                         |          
+                                                                                          --0.94%--get_page_from_freelist
+                                                                                                    |          
+                                                                                                     --0.73%--clear_page
+
+     2.31%     0.00%  DefSch0101     [kernel.kallsyms]        [k] el0_svc
+            |
+            ---el0_svc
+               el0_svc_handler
+               |          
+                --2.29%--el0_svc_common.constprop.3
+                          |          
+                           --1.76%--__arm64_sys_futex
+                                     |          
+                                      --1.75%--do_futex
+                                                |          
+                                                 --1.33%--futex_wake
+                                                           |          
+                                                            --0.58%--wake_up_q
+                                                                      |          
+                                                                       --0.57%--arch_local_irq_restore
+
+     2.31%     0.00%  DefSch0101     [kernel.kallsyms]        [k] el0_svc_handler
+            |
+            ---el0_svc_handler
+               |          
+                --2.29%--el0_svc_common.constprop.3
+                          |          
+                           --1.76%--__arm64_sys_futex
+                                     |          
+                                      --1.75%--do_futex
+                                                |          
+                                                 --1.33%--futex_wake
+                                                           |          
+                                                            --0.58%--wake_up_q
+                                                                      |          
+                                                                       --0.57%--arch_local_irq_restore
+
+     2.29%     0.15%  DefSch0101     [kernel.kallsyms]        [k] el0_svc_common.constprop.3
+            |          
+             --2.14%--el0_svc_common.constprop.3
+                       |          
+                        --1.76%--__arm64_sys_futex
+                                  |          
+                                   --1.75%--do_futex
+                                             |          
+                                              --1.33%--futex_wake
+                                                        |          
+                                                         --0.58%--wake_up_q
+                                                                   |          
+                                                                    --0.57%--arch_local_irq_restore
+
+     2.26%     0.01%  DefSch0101     [kernel.kallsyms]        [k] do_mem_abort
+            |          
+             --2.26%--do_mem_abort
+                       |          
+                        --2.23%--do_translation_fault
+                                  |          
+                                   --2.22%--do_page_fault
+                                             |          
+                                              --2.09%--handle_mm_fault
+                                                        |          
+                                                         --2.02%--__handle_mm_fault
+                                                                   |          
+                                                                    --0.99%--alloc_pages_vma
+                                                                              |          
+                                                                               --0.99%--__alloc_pages_nodemask
+                                                                                         |          
+                                                                                          --0.94%--get_page_from_freelist
+                                                                                                    |          
+                                                                                                     --0.73%--clear_page
+
+     2.25%     0.01%  DefSch0101     [kernel.kallsyms]        [k] do_page_fault
+            |          
+             --2.24%--do_page_fault
+                       |          
+                        --2.12%--handle_mm_fault
+                                  |          
+                                   --2.05%--__handle_mm_fault
+                                             |          
+                                              --0.99%--alloc_pages_vma
+                                                        |          
+                                                         --0.99%--__alloc_pages_nodemask
+                                                                   |          
+                                                                    --0.94%--get_page_from_freelist
+                                                                              |          
+                                                                               --0.73%--clear_page
+
+     2.25%     0.01%  DefSch0100     libbrm.so                [.] BRM_NMRO_FormatUpdatePktEx
+            |          
+             --2.24%--BRM_NMRO_FormatUpdatePktEx
+                       |          
+                       |--0.89%--BRM_NMRO_FormatRoute
+                       |          
+                        --0.84%--BRM_NMRO_PrepareRouteCtrlBlock
+                                  |          
+                                   --0.56%--BRM_NMRO_PrepareLabelAndAttr
+
+     2.24%     0.92%  DefSch0101     libdefault.so            [.] DLM_AllocSlice
+            |          
+            |--1.32%--DLM_AllocSlice
+            |          |          
+            |           --1.31%--DLM_AllocPage
+            |                     |          
+            |                     |--0.66%--DmallocAlloc
+            |                     |          |          
+            |                     |           --0.63%--DmallocChunkAllocViaSplit
+            |                     |                     |          
+            |                     |                      --0.60%--el0_da
+            |                     |                                |          
+            |                     |                                 --0.59%--do_mem_abort
+            |                     |                                           |          
+            |                     |                                            --0.59%--do_translation_fault
+            |                     |                                                      do_page_fault
+            |                     |                                                      |          
+            |                     |                                                       --0.53%--handle_mm_fault
+            |                     |                                                                 |          
+            |                     |                                                                  --0.51%--__handle_mm_fault
+            |                     |          
+            |                      --0.61%--el0_da
+            |                                |          
+            |                                 --0.58%--do_mem_abort
+            |                                           |          
+            |                                            --0.57%--do_translation_fault
+            |                                                      |          
+            |                                                       --0.57%--do_page_fault
+            |                                                                 |          
+            |                                                                  --0.56%--handle_mm_fault
+            |                                                                            |          
+            |                                                                             --0.55%--__handle_mm_fault
+            |          
+             --0.92%--0xffffad48871b
+                       0xffffad4221ef
+                       VosTskAllTaskEntry
+                       rtfScmCompScheDefaultEntry
+                       rtfScmCompScheKernelEntryFifo
+                       rtfScmMessageSchedule
+                       |          
+                        --0.92%--dmsFcmMsgProcessCbk
+                                  |          
+                                   --0.90%--RM_COM_ReceiveMsg
+                                             RM_RECV_ProcCtlRmiMsg
+                                             RM_PM_ProcRPMsg
+                                             RM_RP_ProcMsg
+                                             RM_RP_RealUpdateRoute
+                                             RM_RP_UpdateRoute
+                                             RM_RP_ParseUpdateRouteTLV
+                                             RM_RP_ParsePrefix
+                                             RM_RS_UpdateRoute
+
+     2.23%     0.00%  DefSch0101     [kernel.kallsyms]        [k] do_translation_fault
+            |          
+             --2.22%--do_translation_fault
+                       |          
+                        --2.22%--do_page_fault
+                                  |          
+                                   --2.09%--handle_mm_fault
+                                             |          
+                                              --2.02%--__handle_mm_fault
+                                                        |          
+                                                         --0.99%--alloc_pages_vma
+                                                                   |          
+                                                                    --0.99%--__alloc_pages_nodemask
+                                                                              |          
+                                                                               --0.94%--get_page_from_freelist
+                                                                                         |          
+                                                                                          --0.73%--clear_page
+
+     2.22%     0.00%  DefSch0101     libbrm.so                [.] BRM_NMRO_PushSingleRouteToAllUpdatePeerGroups
+            |
+            ---BRM_NMRO_PushSingleRouteToAllUpdatePeerGroups
+               |          
+                --1.80%--BRM_NMRO_PutToUpgRealAdvList
+                          |          
+                           --1.14%--BRM_NMRO_PutToUpgRealNoAddPath
+
+     2.22%     0.97%  DefSch0100     libc.so.6                [.] pthread_mutex_lock
+            |          
+            |--1.25%--pthread_mutex_lock
+            |          |          
+            |           --0.66%--0xffffad41ec38
+            |                     |          
+            |                      --0.63%--el0_svc
+            |                                el0_svc_handler
+            |                                |          
+            |                                 --0.63%--el0_svc_common.constprop.3
+            |          
+             --0.97%--0xffffad48871b
+                       0xffffad4221ef
+                       |          
+                        --0.91%--VosTskAllTaskEntry
+                                  rtfScmCompScheDefaultEntry
+                                  rtfScmCompScheKernelEntryFifo
+                                  rtfScmMessageSchedule
+                                  |          
+                                   --0.63%--dmsFcmMsgProcessCbk
+
+     2.15%     0.20%  DefSch0100     libbrm.so                [.] BRM_DP_ProcActiveInvalidModify
+            |          
+             --1.95%--BRM_DP_ProcActiveInvalidModify
+                       |          
+                        --1.65%--BRM_DP_NotifyDecisionResult
+                                  |          
+                                   --0.52%--BRM_RUM_DistributeActiveRoute
+
+     2.13%     0.00%  DefSch0100     libbrm.so                [.] BRM_BNMI_ParseBnmPeerEventMsg
+            |
+            ---BRM_BNMI_ParseBnmPeerEventMsg
+               |          
+                --2.13%--BRM_BNMI_ParsePeerDownTlv
+                          |          
+                           --2.12%--BRM_NM_ProcPeerDown
+                                     |          
+                                      --2.12%--BRM_NM_DelPeerRoutes
+                                                BRM_NM_ClearRibin
+                                                |          
+                                                |--1.58%--BRM_RM_RibIn_DeleteAllRoute
+                                                |          |          
+                                                |           --1.55%--BRM_RB_ScanAllNodes
+                                                |                     |          
+                                                |                      --1.51%--BRM_RM_DeleteRoute
+                                                |                                |          
+                                                |                                |--0.57%--BRM_RM_LocRib_DeleteRoute
+                                                |                                |          
+                                                |                                 --0.56%--BRM_RM_FreeRtEntry
+                                                |          
+                                                 --0.54%--BRM_RM_RibIn_SetAllRouteInvalid
+
+     2.13%     0.00%  DefSch0101     libbrm.so                [.] BRM_UPG_FormatJobHandle
+            |
+            ---BRM_UPG_FormatJobHandle
+               |          
+                --2.12%--BRM_XMRO_SendMsgAddProcFlowCtrl
+                          BRM_XMRO_SendMsgWithFlowCtrl
+                          |          
+                           --1.99%--BRM_XMRO_FormatDataMsg
+                                     |          
+                                      --1.98%--BRM_RMRO_FormatRoute
+                                                |          
+                                                 --0.91%--BRM_RMRO_FormatRoutePrefixTLV
+                                                           |          
+                                                            --0.83%--BRM_RMRO_FormatRouteDetailTlv
+
+     2.13%     0.00%  DefSch0101     libbrm.so                [.] BRM_XMRO_SendMsgWithFlowCtrl
+            |
+            ---BRM_XMRO_SendMsgWithFlowCtrl
+               |          
+                --1.99%--BRM_XMRO_FormatDataMsg
+                          |          
+                           --1.98%--BRM_RMRO_FormatRoute
+                                     |          
+                                      --0.91%--BRM_RMRO_FormatRoutePrefixTLV
+                                                |          
+                                                 --0.83%--BRM_RMRO_FormatRouteDetailTlv
+
+     2.13%     0.00%  DefSch0100     libbrm.so                [.] BRM_BNMI_ParsePeerDownTlv
+            |
+            ---BRM_BNMI_ParsePeerDownTlv
+               |          
+                --2.12%--BRM_NM_ProcPeerDown
+                          |          
+                           --2.12%--BRM_NM_DelPeerRoutes
+                                     BRM_NM_ClearRibin
+                                     |          
+                                     |--1.58%--BRM_RM_RibIn_DeleteAllRoute
+                                     |          |          
+                                     |           --1.55%--BRM_RB_ScanAllNodes
+                                     |                     |          
+                                     |                      --1.51%--BRM_RM_DeleteRoute
+                                     |                                |          
+                                     |                                |--0.57%--BRM_RM_LocRib_DeleteRoute
+                                     |                                |          
+                                     |                                 --0.56%--BRM_RM_FreeRtEntry
+                                     |          
+                                      --0.54%--BRM_RM_RibIn_SetAllRouteInvalid
+
+     2.12%     0.00%  DefSch0101     libbrm.so                [.] BRM_XMRO_SendMsgAddProcFlowCtrl
+            |
+            ---BRM_XMRO_SendMsgAddProcFlowCtrl
+               BRM_XMRO_SendMsgWithFlowCtrl
+               |          
+                --1.99%--BRM_XMRO_FormatDataMsg
+                          |          
+                           --1.98%--BRM_RMRO_FormatRoute
+                                     |          
+                                      --0.91%--BRM_RMRO_FormatRoutePrefixTLV
+                                                |          
+                                                 --0.83%--BRM_RMRO_FormatRouteDetailTlv
+
+     2.12%     0.00%  DefSch0100     libbrm.so                [.] BRM_NM_ProcPeerDown
+            |
+            ---BRM_NM_ProcPeerDown
+               |          
+                --2.12%--BRM_NM_DelPeerRoutes
+                          BRM_NM_ClearRibin
+                          |          
+                          |--1.58%--BRM_RM_RibIn_DeleteAllRoute
+                          |          |          
+                          |           --1.55%--BRM_RB_ScanAllNodes
+                          |                     |          
+                          |                      --1.51%--BRM_RM_DeleteRoute
+                          |                                |          
+                          |                                |--0.57%--BRM_RM_LocRib_DeleteRoute
+                          |                                |          
+                          |                                 --0.56%--BRM_RM_FreeRtEntry
+                          |          
+                           --0.54%--BRM_RM_RibIn_SetAllRouteInvalid
+
+     2.12%     0.07%  DefSch0101     [kernel.kallsyms]        [k] handle_mm_fault
+            |          
+             --2.05%--handle_mm_fault
+                       __handle_mm_fault
+                       |          
+                        --0.99%--alloc_pages_vma
+                                  |          
+                                   --0.99%--__alloc_pages_nodemask
+                                             |          
+                                              --0.94%--get_page_from_freelist
+                                                        |          
+                                                         --0.73%--clear_page
+
+     2.12%     0.00%  DefSch0100     libbrm.so                [.] BRM_NM_DelPeerRoutes
+            |
+            ---BRM_NM_DelPeerRoutes
+               BRM_NM_ClearRibin
+               |          
+               |--1.58%--BRM_RM_RibIn_DeleteAllRoute
+               |          |          
+               |           --1.55%--BRM_RB_ScanAllNodes
+               |                     |          
+               |                      --1.51%--BRM_RM_DeleteRoute
+               |                                |          
+               |                                |--0.57%--BRM_RM_LocRib_DeleteRoute
+               |                                |          
+               |                                 --0.56%--BRM_RM_FreeRtEntry
+               |          
+                --0.54%--BRM_RM_RibIn_SetAllRouteInvalid
+
+     2.12%     0.00%  DefSch0100     libbrm.so                [.] BRM_NM_ClearRibin
+            |
+            ---BRM_NM_ClearRibin
+               |          
+               |--1.58%--BRM_RM_RibIn_DeleteAllRoute
+               |          |          
+               |           --1.55%--BRM_RB_ScanAllNodes
+               |                     |          
+               |                      --1.51%--BRM_RM_DeleteRoute
+               |                                |          
+               |                                |--0.57%--BRM_RM_LocRib_DeleteRoute
+               |                                |          
+               |                                 --0.56%--BRM_RM_FreeRtEntry
+               |          
+                --0.54%--BRM_RM_RibIn_SetAllRouteInvalid
+
+     2.05%     0.10%  DefSch0101     [kernel.kallsyms]        [k] __handle_mm_fault
+            |          
+             --1.95%--__handle_mm_fault
+                       |          
+                        --0.99%--alloc_pages_vma
+                                  |          
+                                   --0.99%--__alloc_pages_nodemask
+                                             |          
+                                              --0.94%--get_page_from_freelist
+                                                        |          
+                                                         --0.73%--clear_page
+
+     2.01%     0.00%  DefSch0100     libc.so.6                [.] 0x0000ffffad4268c3
+            |
+            ---0xffffad4268c3
+               |          
+                --2.00%--0xffffad41ecbc
+                          |          
+                           --1.96%--el0_svc
+                                     el0_svc_handler
+                                     |          
+                                      --1.95%--el0_svc_common.constprop.3
+                                                |          
+                                                 --1.86%--__arm64_sys_futex
+                                                           |          
+                                                            --1.85%--do_futex
+                                                                      |          
+                                                                       --1.84%--futex_wake
+                                                                                 |          
+                                                                                  --1.11%--wake_up_q
+                                                                                            |          
+                                                                                             --1.08%--arch_local_irq_restore
+
+     2.00%     0.00%  DefSch0100     libc.so.6                [.] 0x0000ffffad41ecbc
+            |
+            ---0xffffad41ecbc
+               |          
+                --1.96%--el0_svc
+                          el0_svc_handler
+                          |          
+                           --1.95%--el0_svc_common.constprop.3
+                                     |          
+                                      --1.86%--__arm64_sys_futex
+                                                |          
+                                                 --1.85%--do_futex
+                                                           |          
+                                                            --1.84%--futex_wake
+                                                                      |          
+                                                                       --1.11%--wake_up_q
+                                                                                 |          
+                                                                                  --1.08%--arch_local_irq_restore
+
+     2.00%     0.15%  DefSch0101     libbrm.so                [.] BRM_RMRO_FormatRoute
+            |          
+             --1.84%--BRM_RMRO_FormatRoute
+                       |          
+                        --0.91%--BRM_RMRO_FormatRoutePrefixTLV
+                                  |          
+                                   --0.83%--BRM_RMRO_FormatRouteDetailTlv
+
+     1.99%     0.00%  DefSch0101     libbrm.so                [.] BRM_XMRO_FormatDataMsg
+            |
+            ---BRM_XMRO_FormatDataMsg
+               |          
+                --1.98%--BRM_RMRO_FormatRoute
+                          |          
+                           --0.91%--BRM_RMRO_FormatRoutePrefixTLV
+                                     |          
+                                      --0.83%--BRM_RMRO_FormatRouteDetailTlv
+
+     1.93%     1.20%  DefSch0101     libdefault.so            [.] vosMemVisualAllocStat
+            |          
+            |--1.20%--0xffffad48871b
+            |          0xffffad4221ef
+            |          VosTskAllTaskEntry
+            |          rtfScmCompScheDefaultEntry
+            |          rtfScmCompScheKernelEntryFifo
+            |          rtfScmMessageSchedule
+            |          dmsFcmMsgProcessCbk
+            |          |          
+            |           --1.19%--RM_COM_ReceiveMsg
+            |                     RM_RECV_ProcCtlRmiMsg
+            |                     RM_PM_ProcRPMsg
+            |                     RM_RP_ProcMsg
+            |                     RM_RP_RealUpdateRoute
+            |                     RM_RP_UpdateRoute
+            |                     RM_RP_ParseUpdateRouteTLV
+            |                     RM_RP_ParsePrefix
+            |                     RM_RS_UpdateRoute
+            |          
+             --0.74%--vosMemVisualAllocStat
+                       |          
+                        --0.64%--vosMemVisualPtPeekUpdate
+                                  |          
+                                   --0.57%--vosTzLmtGetNoLock
+
+     1.91%     0.00%  DefSch0101     libcpbmFakeComponent.so  [.] StartCompTask
+            |
+            ---StartCompTask
+               |          
+                --1.90%--DeployCreateComponent
+                          |          
+                           --1.58%--ImportCompInfo2Dopra
+                                     RTF_CompTypeImportByMode
+                                     rtfCompTypeImportByMode
+                                     |          
+                                      --1.58%--rtfCcmCompFileHdlGet
+                                                |          
+                                                 --1.55%--rtfCcmCompObjFileLoadAndTblAlloc
+                                                           VOS_StarterDyLoadByMode
+                                                           |          
+                                                            --1.55%--starterModuleInit
+                                                                      starterModEntrySet
+                                                                      starterLibDload
+                                                                      starterBinObjectsLoad
+                                                                      elfbinldrRelocator
+                                           

@@ -1,0 +1,999 @@
+                           vosShareLibOpen
+                                                                      dlopen
+                                                                      0xffffad41dc5f
+                                                                      _dl_catch_error
+                                                                      _dl_catch_exception
+                                                                      0xffffad41e183
+                                                                      0xffffae3fa2c7
+                                                                      _dl_catch_exception
+                                                                      0xffffae3f9ef7
+                                                                      _dl_catch_exception
+                                                                      |          
+                                                                       --1.52%--0xffffae3fa8cb
+                                                                                 |          
+                                                                                  --1.29%--0xffffae3fc3f7
+                                                                                            |          
+                                                                                             --1.16%--0xffffae3f7cf3
+
+     1.91%     0.00%  DefSch0101     benchmark_alt            [.] DeployCreateComponent
+            |
+            ---DeployCreateComponent
+               |          
+                --1.59%--ImportCompInfo2Dopra
+                          RTF_CompTypeImportByMode
+                          rtfCompTypeImportByMode
+                          |          
+                           --1.58%--rtfCcmCompFileHdlGet
+                                     |          
+                                      --1.56%--rtfCcmCompObjFileLoadAndTblAlloc
+                                                VOS_StarterDyLoadByMode
+                                                |          
+                                                 --1.56%--starterModuleInit
+                                                           starterModEntrySet
+                                                           starterLibDload
+                                                           starterBinObjectsLoad
+                                                           elfbinldrRelocator
+                                                           vosShareLibOpen
+                                                           dlopen
+                                                           0xffffad41dc5f
+                                                           _dl_catch_error
+                                                           _dl_catch_exception
+                                                           0xffffad41e183
+                                                           0xffffae3fa2c7
+                                                           _dl_catch_exception
+                                                           0xffffae3f9ef7
+                                                           _dl_catch_exception
+                                                           |          
+                                                            --1.52%--0xffffae3fa8cb
+                                                                      |          
+                                                                       --1.29%--0xffffae3fc3f7
+                                                                                 |          
+                                                                                  --1.16%--0xffffae3f7cf3
+
+     1.90%     0.00%  DefSch0300     libc.so.6                [.] 0x0000ffffad48871b
+            |
+            ---0xffffad48871b
+               0xffffad4221ef
+               |          
+                --1.90%--VosTskAllTaskEntry
+                          rtfScmCompScheDefaultEntry
+                          |          
+                           --1.84%--rtfScmCompScheKernelEntryFifo
+                                     |          
+                                      --1.83%--rtfScmMessageSchedule
+                                                |          
+                                                 --1.41%--dmsFcmMsgProcessCbk
+                                                           |          
+                                                            --1.40%--FES_MSG_ProcMsg
+                                                                      |          
+                                                                       --1.35%--FES_MSG_DispatchMsg
+                                                                                 |          
+                                                                                 |--0.69%--FES_MSG_TransPartnerData
+                                                                                 |          
+                                                                                  --0.63%--FES_TLP_ProcessMsg
+
+     1.90%     0.00%  DefSch0300     libc.so.6                [.] 0x0000ffffad4221ef
+            |
+            ---0xffffad4221ef
+               |          
+                --1.90%--VosTskAllTaskEntry
+                          rtfScmCompScheDefaultEntry
+                          |          
+                           --1.84%--rtfScmCompScheKernelEntryFifo
+                                     |          
+                                      --1.83%--rtfScmMessageSchedule
+                                                |          
+                                                 --1.41%--dmsFcmMsgProcessCbk
+                                                           |          
+                                                            --1.40%--FES_MSG_ProcMsg
+                                                                      |          
+                                                                       --1.35%--FES_MSG_DispatchMsg
+                                                                                 |          
+                                                                                 |--0.69%--FES_MSG_TransPartnerData
+                                                                                 |          
+                                                                                  --0.63%--FES_TLP_ProcessMsg
+
+     1.90%     0.00%  DefSch0300     libdefault.so            [.] rtfScmCompScheDefaultEntry
+            |          
+             --1.90%--rtfScmCompScheDefaultEntry
+                       |          
+                        --1.84%--rtfScmCompScheKernelEntryFifo
+                                  |          
+                                   --1.83%--rtfScmMessageSchedule
+                                             |          
+                                              --1.41%--dmsFcmMsgProcessCbk
+                                                        |          
+                                                         --1.40%--FES_MSG_ProcMsg
+                                                                   |          
+                                                                    --1.35%--FES_MSG_DispatchMsg
+                                                                              |          
+                                                                              |--0.69%--FES_MSG_TransPartnerData
+                                                                              |          
+                                                                               --0.63%--FES_TLP_ProcessMsg
+
+     1.90%     0.00%  DefSch0300     libdefault.so            [.] VosTskAllTaskEntry
+            |
+            ---VosTskAllTaskEntry
+               rtfScmCompScheDefaultEntry
+               |          
+                --1.84%--rtfScmCompScheKernelEntryFifo
+                          |          
+                           --1.83%--rtfScmMessageSchedule
+                                     |          
+                                      --1.41%--dmsFcmMsgProcessCbk
+                                                |          
+                                                 --1.40%--FES_MSG_ProcMsg
+                                                           |          
+                                                            --1.35%--FES_MSG_DispatchMsg
+                                                                      |          
+                                                                      |--0.69%--FES_MSG_TransPartnerData
+                                                                      |          
+                                                                       --0.63%--FES_TLP_ProcessMsg
+
+     1.90%     0.32%  DefSch0100     [kernel.kallsyms]        [k] futex_wake
+            |          
+             --1.58%--futex_wake
+                       |          
+                        --1.13%--wake_up_q
+                                  |          
+                                   --1.10%--arch_local_irq_restore
+
+     1.88%     1.03%  DefSch0101     libc.so.6                [.] pthread_mutex_lock
+            |          
+            |--1.03%--0xffffad48871b
+            |          0xffffad4221ef
+            |          VosTskAllTaskEntry
+            |          rtfScmCompScheDefaultEntry
+            |          |          
+            |           --1.02%--rtfScmCompScheKernelEntryFifo
+            |                     |          
+            |                      --1.02%--rtfScmMessageSchedule
+            |                                |          
+            |                                 --0.75%--dmsFcmMsgProcessCbk
+            |                                           |          
+            |                                            --0.73%--RM_COM_ReceiveMsg
+            |                                                      RM_RECV_ProcCtlRmiMsg
+            |                                                      |          
+            |                                                       --0.73%--RM_PM_ProcRPMsg
+            |                                                                 RM_RP_ProcMsg
+            |                                                                 RM_RP_RealUpdateRoute
+            |                                                                 RM_RP_UpdateRoute
+            |                                                                 RM_RP_ParseUpdateRouteTLV
+            |                                                                 RM_RP_ParsePrefix
+            |                                                                 RM_RS_UpdateRoute
+            |          
+             --0.85%--pthread_mutex_lock
+                       |          
+                        --0.60%--0xffffad41ec38
+                                  |          
+                                   --0.56%--el0_svc
+                                             el0_svc_handler
+                                             |          
+                                              --0.55%--el0_svc_common.constprop.3
+
+     1.84%     0.00%  DefSch0300     libdefault.so            [.] rtfScmCompScheKernelEntryFifo
+            |          
+             --1.84%--rtfScmCompScheKernelEntryFifo
+                       |          
+                        --1.83%--rtfScmMessageSchedule
+                                  |          
+                                   --1.41%--dmsFcmMsgProcessCbk
+                                             |          
+                                              --1.40%--FES_MSG_ProcMsg
+                                                        |          
+                                                         --1.35%--FES_MSG_DispatchMsg
+                                                                   |          
+                                                                   |--0.69%--FES_MSG_TransPartnerData
+                                                                   |          
+                                                                    --0.63%--FES_TLP_ProcessMsg
+
+     1.83%     0.01%  DefSch0300     libdefault.so            [.] rtfScmMessageSchedule
+            |          
+             --1.83%--rtfScmMessageSchedule
+                       |          
+                        --1.41%--dmsFcmMsgProcessCbk
+                                  |          
+                                   --1.40%--FES_MSG_ProcMsg
+                                             |          
+                                              --1.35%--FES_MSG_DispatchMsg
+                                                        |          
+                                                        |--0.69%--FES_MSG_TransPartnerData
+                                                        |          
+                                                         --0.63%--FES_TLP_ProcessMsg
+
+     1.82%     0.06%  DefSch0100     liblocbase.so            [.] VRP_Free_F
+            |          
+             --1.76%--VRP_Free_F
+                       |          
+                        --1.75%--VOS_MemFree_F
+
+     1.81%     0.03%  DefSch0101     libbrm.so                [.] BRM_NMRO_PutToUpgRealAdvList
+            |          
+             --1.78%--BRM_NMRO_PutToUpgRealAdvList
+                       |          
+                        --1.14%--BRM_NMRO_PutToUpgRealNoAddPath
+
+     1.79%     0.02%  DefSch0100     librm.so                 [.] RM_RS_CopyPath
+            |          
+             --1.78%--RM_RS_CopyPath
+                       |          
+                        --1.47%--RM_RS_CopyPathData
+                                  |          
+                                  |--0.82%--RM_RS_FreePathData
+                                  |          |          
+                                  |           --0.82%--VRP_Free_F
+                                  |                     |          
+                                  |                      --0.79%--VOS_MemFree_F
+                                  |          
+                                   --0.51%--VRP_SimpleAlloc_F
+
+     1.78%     0.03%  DefSch0101     [kernel.kallsyms]        [k] __arm64_sys_futex
+            |          
+             --1.75%--__arm64_sys_futex
+                       do_futex
+                       |          
+                        --1.33%--futex_wake
+                                  |          
+                                   --0.58%--wake_up_q
+                                             |          
+                                              --0.57%--arch_local_irq_restore
+
+     1.75%     0.19%  DefSch0100     libdefault.so            [.] VOS_MemFree_F
+            |          
+             --1.56%--VOS_MemFree_F
+
+     1.75%     0.37%  DefSch0101     libdefault.so            [.] vosMemAppendCbHashNodeGet
+            |          
+             --1.38%--vosMemAppendCbHashNodeGet
+                       |          
+                        --0.62%--0xffffad426850
+
+     1.75%     0.01%  DefSch0101     [kernel.kallsyms]        [k] do_futex
+            |          
+             --1.73%--do_futex
+                       |          
+                        --1.33%--futex_wake
+                                  |          
+                                   --0.58%--wake_up_q
+                                             |          
+                                              --0.57%--arch_local_irq_restore
+
+     1.75%     0.08%  DefSch0100     libbrm.so                [.] BRM_RMRO_FormatRoutePrefixTLV
+            |          
+             --1.66%--BRM_RMRO_FormatRoutePrefixTLV
+                       |          
+                        --1.44%--BRM_RMRO_FormatRouteDetailTlv
+
+     1.71%     0.01%  DefSch0300     libfesds.so              [.] FES_MSG_ProcMsg
+            |          
+             --1.70%--FES_MSG_ProcMsg
+                       |          
+                        --1.60%--FES_MSG_DispatchMsg
+                                  |          
+                                  |--0.72%--FES_MSG_TransPartnerData
+                                  |          
+                                   --0.63%--FES_TLP_ProcessMsg
+
+     1.71%     0.00%  DefSch0100     librtp.so                [.] RTP_CreateConfig
+            |
+            ---RTP_CreateConfig
+               |          
+               |--0.84%--VRP_Assert
+               |          |          
+               |           --0.83%--VRP_AssertParseStack
+               |                     VOS_PatchSymNameGet
+               |                     __backtrace_symbols
+               |          
+                --0.66%--RTP_CFG_RestoreRoutePolicy
+                          RTP_CFG_GetFilterByVersion
+                          |          
+                           --0.65%--VRP_Assert
+                                     VRP_AssertParseStack
+                                     VOS_PatchSymNameGet
+                                     __backtrace_symbols
+
+     1.68%     0.85%  DefSch0101     librm.so                 [.] RM_FEAD_ProcPrefixUpdate
+            |          
+            |--0.85%--0xffffad48871b
+            |          0xffffad4221ef
+            |          VosTskAllTaskEntry
+            |          rtfScmCompScheDefaultEntry
+            |          rtfScmCompScheKernelEntryFifo
+            |          rtfScmMessageSchedule
+            |          RTF_MsgProcessCbk
+            |          RM_COM_ReceiveMsg
+            |          RM_RECV_ProcJobMsg
+            |          VRP_JOB_Scheduler
+            |          VRP_JOB_Scheduler_H
+            |          RM_JOB_Scheduler
+            |          RM_RS_NotifyRouteChangeJobCB
+            |          RM_RS_NotifyRtUpdate_H
+            |          RM_FEAD_ProcPrefixUpdate
+            |          
+             --0.83%--RM_FEAD_ProcPrefixUpdate
+                       |          
+                        --0.67%--RM_FEAD_BuildUpdatePrefixMsg
+                                  |          
+                                   --0.63%--RM_FEAD_BuildComplexPrefixTlv
+
+     1.64%     0.01%  DefSch0100     libdefault.so            [.] dmsPipeFnMsgProc
+            |          
+             --1.63%--dmsPipeFnMsgProc
+                       |          
+                        --0.71%--SOCK_DISPATCH_PipeProc
+                                  |          
+                                   --0.63%--SOCK_PIPEM_ProcData
+                                             |          
+                                              --0.58%--SOCK_DISPATCH_MBufProc
+
+     1.63%     0.00%  DefSch0100     libbrm.so                [.] BRM_NMRO_BatchAdvertiseAllRoutesJobHandler
+            |
+            ---BRM_NMRO_BatchAdvertiseAllRoutesJobHandler
+               |          
+                --1.62%--BRM_RM_LocRib_ScanRouteAndCfgDefRoute
+                          |          
+                           --1.62%--BRM_RM_LocRib_ScanRoute
+                                     |          
+                                     |--0.83%--BRM_NMRO_PutToUpgBatch
+                                     |          
+                                      --0.65%--BRM_RM_GetNextRtHead
+                                                |          
+                                                 --0.61%--VRP_RDX_GetNextByIntNode
+
+     1.62%     0.13%  DefSch0100     libbrm.so                [.] BRM_RM_LocRib_ScanRoute
+            |          
+             --1.50%--BRM_RM_LocRib_ScanRoute
+                       |          
+                       |--0.83%--BRM_NMRO_PutToUpgBatch
+                       |          
+                        --0.65%--BRM_RM_GetNextRtHead
+                                  |          
+                                   --0.61%--VRP_RDX_GetNextByIntNode
+
+     1.62%     0.00%  DefSch0100     libbrm.so                [.] BRM_RM_LocRib_ScanRouteAndCfgDefRoute
+            |
+            ---BRM_RM_LocRib_ScanRouteAndCfgDefRoute
+               |          
+                --1.62%--BRM_RM_LocRib_ScanRoute
+                          |          
+                          |--0.83%--BRM_NMRO_PutToUpgBatch
+                          |          
+                           --0.65%--BRM_RM_GetNextRtHead
+                                     |          
+                                      --0.61%--VRP_RDX_GetNextByIntNode
+
+     1.62%     0.00%  DefSch0101     libc.so.6                [.] 0x0000ffffad41dc5f
+            |
+            ---0xffffad41dc5f
+               _dl_catch_error
+               _dl_catch_exception
+               |          
+                --1.60%--0xffffad41e183
+                          0xffffae3fa2c7
+                          _dl_catch_exception
+                          0xffffae3f9ef7
+                          _dl_catch_exception
+                          |          
+                           --1.52%--0xffffae3fa8cb
+                                     |          
+                                      --1.29%--0xffffae3fc3f7
+                                                |          
+                                                 --1.16%--0xffffae3f7cf3
+
+     1.62%     0.00%  DefSch0101     libc.so.6                [.] _dl_catch_error
+            |
+            ---_dl_catch_error
+               _dl_catch_exception
+               |          
+                --1.60%--0xffffad41e183
+                          0xffffae3fa2c7
+                          _dl_catch_exception
+                          0xffffae3f9ef7
+                          _dl_catch_exception
+                          |          
+                           --1.52%--0xffffae3fa8cb
+                                     |          
+                                      --1.29%--0xffffae3fc3f7
+                                                |          
+                                                 --1.16%--0xffffae3f7cf3
+
+     1.62%     0.00%  DefSch0101     libc.so.6                [.] _dl_catch_exception
+            |
+            ---_dl_catch_exception
+               |          
+                --1.60%--0xffffad41e183
+                          0xffffae3fa2c7
+                          _dl_catch_exception
+                          0xffffae3f9ef7
+                          _dl_catch_exception
+                          |          
+                           --1.52%--0xffffae3fa8cb
+                                     |          
+                                      --1.29%--0xffffae3fc3f7
+                                                |          
+                                                 --1.16%--0xffffae3f7cf3
+
+     1.61%     0.00%  DefSch0300     libfesds.so              [.] FES_MSG_DispatchMsg
+            |          
+             --1.60%--FES_MSG_DispatchMsg
+                       |          
+                       |--0.72%--FES_MSG_TransPartnerData
+                       |          
+                        --0.63%--FES_TLP_ProcessMsg
+
+     1.60%     0.00%  DefSch0101     libc.so.6                [.] dlopen
+            |
+            ---dlopen
+               0xffffad41dc5f
+               _dl_catch_error
+               _dl_catch_exception
+               0xffffad41e183
+               0xffffae3fa2c7
+               _dl_catch_exception
+               0xffffae3f9ef7
+               _dl_catch_exception
+               |          
+                --1.52%--0xffffae3fa8cb
+                          |          
+                           --1.29%--0xffffae3fc3f7
+                                     |          
+                                      --1.16%--0xffffae3f7cf3
+
+     1.60%     0.00%  DefSch0101     libc.so.6                [.] 0x0000ffffad41e183
+            |
+            ---0xffffad41e183
+               0xffffae3fa2c7
+               _dl_catch_exception
+               0xffffae3f9ef7
+               _dl_catch_exception
+               |          
+                --1.52%--0xffffae3fa8cb
+                          |          
+                           --1.29%--0xffffae3fc3f7
+                                     |          
+                                      --1.16%--0xffffae3f7cf3
+
+     1.60%     0.00%  DefSch0101     ld-linux-aarch64.so.1    [.] 0x0000ffffae3fa2c7
+            |
+            ---0xffffae3fa2c7
+               _dl_catch_exception
+               0xffffae3f9ef7
+               _dl_catch_exception
+               |          
+                --1.52%--0xffffae3fa8cb
+                          |          
+                           --1.29%--0xffffae3fc3f7
+                                     |          
+                                      --1.16%--0xffffae3f7cf3
+
+     1.60%     0.00%  DefSch0101     ld-linux-aarch64.so.1    [.] 0x0000ffffae3f9ef7
+            |
+            ---0xffffae3f9ef7
+               _dl_catch_exception
+               |          
+                --1.52%--0xffffae3fa8cb
+                          |          
+                           --1.29%--0xffffae3fc3f7
+                                     |          
+                                      --1.16%--0xffffae3f7cf3
+
+     1.60%     0.00%  DefSch0101     libdefault.so            [.] rtfCompTypeImportByMode
+            |
+            ---rtfCompTypeImportByMode
+               |          
+                --1.60%--rtfCcmCompFileHdlGet
+                          |          
+                           --1.57%--rtfCcmCompObjFileLoadAndTblAlloc
+                                     VOS_StarterDyLoadByMode
+                                     |          
+                                      --1.57%--starterModuleInit
+                                                starterModEntrySet
+                                                starterLibDload
+                                                starterBinObjectsLoad
+                                                elfbinldrRelocator
+                                                vosShareLibOpen
+                                                dlopen
+                                                0xffffad41dc5f
+                                                _dl_catch_error
+                                                _dl_catch_exception
+                                                0xffffad41e183
+                                                0xffffae3fa2c7
+                                                _dl_catch_exception
+                                                0xffffae3f9ef7
+                                                _dl_catch_exception
+                                                |          
+                                                 --1.52%--0xffffae3fa8cb
+                                                           |          
+                                                            --1.29%--0xffffae3fc3f7
+                                                                      |          
+                                                                       --1.16%--0xffffae3f7cf3
+
+     1.60%     0.00%  DefSch0101     libdefault.so            [.] rtfCcmCompFileHdlGet
+            |
+            ---rtfCcmCompFileHdlGet
+               |          
+                --1.57%--rtfCcmCompObjFileLoadAndTblAlloc
+                          VOS_StarterDyLoadByMode
+                          |          
+                           --1.57%--starterModuleInit
+                                     starterModEntrySet
+                                     starterLibDload
+                                     starterBinObjectsLoad
+                                     elfbinldrRelocator
+                                     vosShareLibOpen
+                                     dlopen
+                                     0xffffad41dc5f
+                                     _dl_catch_error
+                                     _dl_catch_exception
+                                     0xffffad41e183
+                                     0xffffae3fa2c7
+                                     _dl_catch_exception
+                                     0xffffae3f9ef7
+                                     _dl_catch_exception
+                                     |          
+                                      --1.52%--0xffffae3fa8cb
+                                                |          
+                                                 --1.29%--0xffffae3fc3f7
+                                                           |          
+                                                            --1.16%--0xffffae3f7cf3
+
+     1.60%     0.00%  DefSch0101     libdefault.so            [.] RTF_CompTypeImportByMode
+            |
+            ---RTF_CompTypeImportByMode
+               rtfCompTypeImportByMode
+               |          
+                --1.59%--rtfCcmCompFileHdlGet
+                          |          
+                           --1.57%--rtfCcmCompObjFileLoadAndTblAlloc
+                                     VOS_StarterDyLoadByMode
+                                     |          
+                                      --1.57%--starterModuleInit
+                                                starterModEntrySet
+                                                starterLibDload
+                                                starterBinObjectsLoad
+                                                elfbinldrRelocator
+                                                vosShareLibOpen
+                                                dlopen
+                                                0xffffad41dc5f
+                                                _dl_catch_error
+                                                _dl_catch_exception
+                                                0xffffad41e183
+                                                0xffffae3fa2c7
+                                                _dl_catch_exception
+                                                0xffffae3f9ef7
+                                                _dl_catch_exception
+                                                |          
+                                                 --1.52%--0xffffae3fa8cb
+                                                           |          
+                                                            --1.29%--0xffffae3fc3f7
+                                                                      |          
+                                                                       --1.16%--0xffffae3f7cf3
+
+     1.59%     0.00%  DefSch0101     libdefault.so            [.] vosShareLibOpen
+            |
+            ---vosShareLibOpen
+               dlopen
+               0xffffad41dc5f
+               _dl_catch_error
+               _dl_catch_exception
+               0xffffad41e183
+               0xffffae3fa2c7
+               _dl_catch_exception
+               0xffffae3f9ef7
+               _dl_catch_exception
+               |          
+                --1.52%--0xffffae3fa8cb
+                          |          
+                           --1.29%--0xffffae3fc3f7
+                                     |          
+                                      --1.16%--0xffffae3f7cf3
+
+     1.59%     0.00%  DefSch0101     benchmark_alt            [.] ImportCompInfo2Dopra
+            |
+            ---ImportCompInfo2Dopra
+               RTF_CompTypeImportByMode
+               rtfCompTypeImportByMode
+               |          
+                --1.59%--rtfCcmCompFileHdlGet
+                          |          
+                           --1.56%--rtfCcmCompObjFileLoadAndTblAlloc
+                                     VOS_StarterDyLoadByMode
+                                     |          
+                                      --1.56%--starterModuleInit
+                                                starterModEntrySet
+                                                starterLibDload
+                                                starterBinObjectsLoad
+                                                elfbinldrRelocator
+                                                vosShareLibOpen
+                                                dlopen
+                                                0xffffad41dc5f
+                                                _dl_catch_error
+                                                _dl_catch_exception
+                                                0xffffad41e183
+                                                0xffffae3fa2c7
+                                                _dl_catch_exception
+                                                0xffffae3f9ef7
+                                                _dl_catch_exception
+                                                |          
+                                                 --1.52%--0xffffae3fa8cb
+                                                           |          
+                                                            --1.29%--0xffffae3fc3f7
+                                                                      |          
+                                                                       --1.16%--0xffffae3f7cf3
+
+     1.59%     0.03%  DefSch0101     libbrm.so                [.] BRM_RM_LocRib_AddRtHead
+            |          
+             --1.56%--BRM_RM_LocRib_AddRtHead
+                       |          
+                        --1.15%--0xffff590dae63
+                                  VRP_RDX_AddNode
+
+     1.58%     0.00%  DefSch0101     libdefault.so            [.] starterModEntrySet
+            |
+            ---starterModEntrySet
+               starterLibDload
+               starterBinObjectsLoad
+               elfbinldrRelocator
+               vosShareLibOpen
+               dlopen
+               0xffffad41dc5f
+               _dl_catch_error
+               _dl_catch_exception
+               0xffffad41e183
+               0xffffae3fa2c7
+               _dl_catch_exception
+               0xffffae3f9ef7
+               _dl_catch_exception
+               |          
+                --1.52%--0xffffae3fa8cb
+                          |          
+                           --1.29%--0xffffae3fc3f7
+                                     |          
+                                      --1.16%--0xffffae3f7cf3
+
+     1.58%     0.00%  DefSch0101     libdefault.so            [.] starterLibDload
+            |
+            ---starterLibDload
+               starterBinObjectsLoad
+               elfbinldrRelocator
+               vosShareLibOpen
+               dlopen
+               0xffffad41dc5f
+               _dl_catch_error
+               _dl_catch_exception
+               0xffffad41e183
+               0xffffae3fa2c7
+               _dl_catch_exception
+               0xffffae3f9ef7
+               _dl_catch_exception
+               |          
+                --1.52%--0xffffae3fa8cb
+                          |          
+                           --1.29%--0xffffae3fc3f7
+                                     |          
+                                      --1.16%--0xffffae3f7cf3
+
+     1.58%     0.00%  DefSch0101     libdefault.so            [.] starterBinObjectsLoad
+            |
+            ---starterBinObjectsLoad
+               elfbinldrRelocator
+               vosShareLibOpen
+               dlopen
+               0xffffad41dc5f
+               _dl_catch_error
+               _dl_catch_exception
+               0xffffad41e183
+               0xffffae3fa2c7
+               _dl_catch_exception
+               0xffffae3f9ef7
+               _dl_catch_exception
+               |          
+                --1.52%--0xffffae3fa8cb
+                          |          
+                           --1.29%--0xffffae3fc3f7
+                                     |          
+                                      --1.16%--0xffffae3f7cf3
+
+     1.58%     0.00%  DefSch0101     libdefault.so            [.] elfbinldrRelocator
+            |
+            ---elfbinldrRelocator
+               vosShareLibOpen
+               dlopen
+               0xffffad41dc5f
+               _dl_catch_error
+               _dl_catch_exception
+               0xffffad41e183
+               0xffffae3fa2c7
+               _dl_catch_exception
+               0xffffae3f9ef7
+               _dl_catch_exception
+               |          
+                --1.52%--0xffffae3fa8cb
+                          |          
+                           --1.29%--0xffffae3fc3f7
+                                     |          
+                                      --1.16%--0xffffae3f7cf3
+
+     1.58%     0.00%  DefSch0100     libbrm.so                [.] BRM_RM_RibIn_DeleteAllRoute
+            |
+            ---BRM_RM_RibIn_DeleteAllRoute
+               |          
+                --1.55%--BRM_RB_ScanAllNodes
+                          |          
+                           --1.51%--BRM_RM_DeleteRoute
+                                     |          
+                                     |--0.57%--BRM_RM_LocRib_DeleteRoute
+                                     |          
+                                      --0.56%--BRM_RM_FreeRtEntry
+
+     1.57%     0.00%  DefSch0101     libdefault.so            [.] rtfCcmCompObjFileLoadAndTblAlloc
+            |
+            ---rtfCcmCompObjFileLoadAndTblAlloc
+               VOS_StarterDyLoadByMode
+               |          
+                --1.57%--starterModuleInit
+                          starterModEntrySet
+                          starterLibDload
+                          starterBinObjectsLoad
+                          elfbinldrRelocator
+                          vosShareLibOpen
+                          dlopen
+                          0xffffad41dc5f
+                          _dl_catch_error
+                          _dl_catch_exception
+                          0xffffad41e183
+                          0xffffae3fa2c7
+                          _dl_catch_exception
+                          0xffffae3f9ef7
+                          _dl_catch_exception
+                          |          
+                           --1.52%--0xffffae3fa8cb
+                                     |          
+                                      --1.29%--0xffffae3fc3f7
+                                                |          
+                                                 --1.16%--0xffffae3f7cf3
+
+     1.57%     0.00%  DefSch0101     libdefault.so            [.] VOS_StarterDyLoadByMode
+            |
+            ---VOS_StarterDyLoadByMode
+               |          
+                --1.57%--starterModuleInit
+                          starterModEntrySet
+                          starterLibDload
+                          starterBinObjectsLoad
+                          elfbinldrRelocator
+                          vosShareLibOpen
+                          dlopen
+                          0xffffad41dc5f
+                          _dl_catch_error
+                          _dl_catch_exception
+                          0xffffad41e183
+                          0xffffae3fa2c7
+                          _dl_catch_exception
+                          0xffffae3f9ef7
+                          _dl_catch_exception
+                          |          
+                           --1.52%--0xffffae3fa8cb
+                                     |          
+                                      --1.29%--0xffffae3fc3f7
+                                                |          
+                                                 --1.16%--0xffffae3f7cf3
+
+     1.57%     0.00%  DefSch0101     libdefault.so            [.] starterModuleInit
+            |
+            ---starterModuleInit
+               starterModEntrySet
+               starterLibDload
+               starterBinObjectsLoad
+               elfbinldrRelocator
+               vosShareLibOpen
+               dlopen
+               0xffffad41dc5f
+               _dl_catch_error
+               _dl_catch_exception
+               0xffffad41e183
+               0xffffae3fa2c7
+               _dl_catch_exception
+               0xffffae3f9ef7
+               _dl_catch_exception
+               |          
+                --1.52%--0xffffae3fa8cb
+                          |          
+                           --1.29%--0xffffae3fc3f7
+                                     |          
+                                      --1.16%--0xffffae3f7cf3
+
+     1.55%     0.01%  DefSch0100     libbrm.so                [.] BRM_RB_ScanAllNodes
+            |          
+             --1.54%--BRM_RB_ScanAllNodes
+                       |          
+                        --1.51%--BRM_RM_DeleteRoute
+                                  |          
+                                  |--0.57%--BRM_RM_LocRib_DeleteRoute
+                                  |          
+                                   --0.56%--BRM_RM_FreeRtEntry
+
+     1.54%     0.00%  DefSch0101     libc.so.6                [.] 0x0000ffffad4268c3
+            |
+            ---0xffffad4268c3
+               0xffffad41ecbc
+               |          
+                --1.46%--el0_svc
+                          el0_svc_handler
+                          |          
+                           --1.46%--el0_svc_common.constprop.3
+                                     |          
+                                      --1.28%--__arm64_sys_futex
+                                                |          
+                                                 --1.28%--do_futex
+                                                           |          
+                                                            --1.25%--futex_wake
+                                                                      |          
+                                                                       --0.53%--wake_up_q
+                                                                                 |          
+                                                                                  --0.52%--arch_local_irq_restore
+
+     1.54%     0.00%  DefSch0101     libc.so.6                [.] 0x0000ffffad41ecbc
+            |
+            ---0xffffad41ecbc
+               |          
+                --1.46%--el0_svc
+                          el0_svc_handler
+                          |          
+                           --1.46%--el0_svc_common.constprop.3
+                                     |          
+                                      --1.28%--__arm64_sys_futex
+                                                |          
+                                                 --1.28%--do_futex
+                                                           |          
+                                                            --1.25%--futex_wake
+                                                                      |          
+                                                                       --0.53%--wake_up_q
+                                                                                 |          
+                                                                                  --0.52%--arch_local_irq_restore
+
+     1.53%     0.05%  DefSch0100     libbrm.so                [.] BRM_RM_DeleteRoute
+            |          
+             --1.49%--BRM_RM_DeleteRoute
+                       |          
+                       |--0.57%--BRM_RM_LocRib_DeleteRoute
+                       |          
+                        --0.56%--BRM_RM_FreeRtEntry
+
+     1.52%     0.00%  DefSch0101     ld-linux-aarch64.so.1    [.] 0x0000ffffae3fa8cb
+            |
+            ---0xffffae3fa8cb
+               |          
+                --1.29%--0xffffae3fc3f7
+                          |          
+                           --1.16%--0xffffae3f7cf3
+
+     1.48%     0.04%  DefSch0100     librm.so                 [.] RM_RS_CopyPathData
+            |          
+             --1.43%--RM_RS_CopyPathData
+                       |          
+                       |--0.82%--RM_RS_FreePathData
+                       |          |          
+                       |           --0.82%--VRP_Free_F
+                       |                     |          
+                       |                      --0.79%--VOS_MemFree_F
+                       |          
+                        --0.51%--VRP_SimpleAlloc_F
+
+     1.45%     0.05%  DefSch0100     libbrm.so                [.] BRM_RM_RibIn_AddRoute
+            |          
+             --1.40%--BRM_RM_RibIn_AddRoute
+                       |          
+                       |--0.83%--BRM_RM_RibInAddRbNode
+                       |          |          
+                       |           --0.71%--BRM_RM_PeerRibIn_CmpRtEntry
+                       |          
+                        --0.55%--BRM_RM_RibIn_AllocNode
+
+     1.44%     0.06%  DefSch0100     libbrm.so                [.] BRM_RMRO_FormatRouteDetailTlv
+            |          
+             --1.37%--BRM_RMRO_FormatRouteDetailTlv
+
+     1.41%     0.00%  DefSch0300     libdefault.so            [.] dmsFcmMsgProcessCbk
+            |          
+             --1.41%--dmsFcmMsgProcessCbk
+                       |          
+                        --1.40%--FES_MSG_ProcMsg
+                                  |          
+                                   --1.35%--FES_MSG_DispatchMsg
+                                             |          
+                                             |--0.69%--FES_MSG_TransPartnerData
+                                             |          
+                                              --0.63%--FES_TLP_ProcessMsg
+
+     1.39%     0.00%  DefSch0100     [kernel.kallsyms]        [k] migrate_misplaced_page
+            |
+            ---migrate_misplaced_page
+               |          
+                --1.32%--migrate_pages
+
+     1.38%     0.00%  DefSch0100     libbrm.so                [.] BRM_CFG_PeerAddrFmSet
+            |
+            ---BRM_CFG_PeerAddrFmSet
+               BRM_CFG_PeerAddrFmProcessSet
+               |          
+               |--0.59%--BRM_CFG_PeerAddrFmSet_AddPathPolicyId
+               |          BRM_PM_StorePeerOutPolicy
+               |          BRM_PM_ReStorePolicy
+               |          
+                --0.58%--BRM_CFG_PeerAddrFmSet_ExportPrefixFilter
+                          BRM_PM_StorePeerOutPolicy
+                          BRM_PM_ReStorePolicy
+
+     1.38%     0.00%  DefSch0100     libbrm.so                [.] BRM_CFG_PeerAddrFmProcessSet
+            |
+            ---BRM_CFG_PeerAddrFmProcessSet
+               |          
+               |--0.59%--BRM_CFG_PeerAddrFmSet_AddPathPolicyId
+               |          BRM_PM_StorePeerOutPolicy
+               |          BRM_PM_ReStorePolicy
+               |          
+                --0.58%--BRM_CFG_PeerAddrFmSet_ExportPrefixFilter
+                          BRM_PM_StorePeerOutPolicy
+                          BRM_PM_ReStorePolicy
+
+     1.38%     0.00%  DefSch0100     libbrm.so                [.] BRM_PM_StorePeerOutPolicy
+            |
+            ---BRM_PM_StorePeerOutPolicy
+               |          
+                --1.37%--BRM_PM_ReStorePolicy
+                          |          
+                          |--0.79%--RTP_CreateConfig
+                          |          
+                           --0.58%--VRP_Assert
+                                     |          
+                                      --0.57%--VRP_AssertParseStack
+                                                |          
+                                                 --0.57%--VOS_PatchSymNameGet
+                                                           __backtrace_symbols
+
+     1.37%     0.12%  DefSch0100     librm.so                 [.] RM_RS_NotifyRtUpdate_H
+            |          
+             --1.25%--RM_RS_NotifyRtUpdate_H
+                       |          
+                        --0.86%--RM_FEAD_ProcPrefixUpdate
+
+     1.35%     0.02%  DefSch0100     librm.so                 [.] RM_RS_AddPrefix
+            |          
+             --1.33%--RM_RS_AddPrefix
+                       |          
+                        --1.28%--VRP_RDX_AddNode
+
+     1.35%     0.00%  DefSch0101     libbrm.so                [.] BRM_NMRO_PackUpdateJobHandler
+            |
+            ---BRM_NMRO_PackUpdateJobHandler
+               BRM_NMRO_ProcPackUpdate
+               BRM_NMRO_PackUpdateThread
+               BRM_NMRO_SendUpdateMsgWithFlowCtrl
+               BRM_NMRO_FormatAndSendMsg
+               |          
+                --1.32%--BRM_NMRO_FormatUpdateBuffer
+                          BRM_NMRO_FormatUpdatePkt
+                          |          
+                           --0.96%--BRM_NMRO_FormatUpdatePktEx
+
+     1.35%     0.00%  DefSch0101     libbrm.so                [.] BRM_NMRO_ProcPackUpdate
+            |
+            ---BRM_NMRO_ProcPackUpdate
+               BRM_NMRO_PackUpdateThread
+               BRM_NMRO_SendUpdateMsgWithFlowCtrl
+               BRM_NMRO_FormatAndSendMsg
+               |          
+                --1.32%--BRM_NMRO_FormatUpdateBuffer
+                          BRM_NMRO_FormatUpdatePkt
+                          |          
+                           --0.96%--BRM_NMRO_FormatUpdatePktEx
+
+     1.35%     0.00%  DefSch0101     libbrm.so                [.] BRM_NMRO_PackUpdateThread
+            |
+            ---BRM_NMRO_PackUpdateThread
+               BRM_NMRO_SendUpdateMsgWithFlowCtrl
+               BRM_NMRO_FormatAndSendMsg
+               |          
+                --1.32%--BRM_NMRO_FormatUpdateBuffer
+                          BRM_NMRO_FormatUpdatePkt
